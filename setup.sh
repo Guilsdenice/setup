@@ -50,7 +50,4 @@ ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
 
-#config git global user.name
-git config --global "gilles.langevin"
-git config --global "langevin.net@gmail.com"
 
