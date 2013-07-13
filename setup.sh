@@ -3,14 +3,12 @@
 # Setup.sh for configuring Ubuntu 12.04 LTS EC2 Instance
 
 #update Linux packages
-
-apt-get update
-apt-get upgrade
-apt-get dist-upgrade
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
 
 # install environnement:
-apt-get install python-pip git mysql-client mysql-server python-mysqldb nginx
-
+apt-get install git mysql-client mysql-server python-mysqldb nginx
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
@@ -55,8 +53,4 @@ ln -sf dotfiles/.emacs.d .
 #config git global user.name
 git config --global "gilles.langevin"
 git config --global "langevin.net@gmail.com"
-
-# Add git setup and close
-git remote add origin https://github.com/guilsdenice/setup.git
-git clone https://github.com/guilsdenice/setup.git
 
